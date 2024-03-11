@@ -19,6 +19,7 @@ class Loader extends PluginBase implements Listener {
     public function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->saveDefaultConfig();
+    }
 
     public function onPlayerDeath(PlayerDeathEvent $event) {
         $player = $event->getPlayer();
