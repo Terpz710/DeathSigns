@@ -1,0 +1,6 @@
+name: DeathSign
+version: 1.0.0
+author: Terpz710
+api: 5.0.0
+main: Terpz710\DeathSign\Loader
+description: Spawns a sign when a player dies.
