@@ -4,9 +4,20 @@
 # {player} = Player Name
 # {date} = Date (M/D/Y)
 # Do not add anymore lines!
-# Signs has a default of 4 lines
+# Signs has a default of 4 lines.
 sign_text:
   - "RIP {player}"
   - ""
   - ""
   - "{date}"
+
+# If true then all worlds will be affected.
+# If False only the worlds in the array will be affected.
+all_worlds: true
+
+# If "all_worlds" is set to false,
+# it will use the worlds from the array below.
+# Add as many worlds as you like!
+worlds:
+  - Hub
+  - World
