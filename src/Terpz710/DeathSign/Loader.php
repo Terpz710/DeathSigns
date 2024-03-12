@@ -25,7 +25,12 @@ class Loader extends PluginBase implements Listener {
         $player = $event->getPlayer();
         $playerName = $player->getName();
         $deathLocation = $player->getPosition();
-        $this->createDeathSign($deathLocation, $playerName);
+        $config = $this->getConfig();
+        $allWorlds = $config->get("all_worlds", true);
+        $allowedWorlds = $config->get("worlds", []);
+        if ($allWorlds || in_array($deathLocation->getWorld()->getName(), $allowedWorlds)) {
+            $this->createDeathSign($deathLocation, $playerName);
+        }
     }
 
     public function createDeathSign(Position $position, string $playerName) {
