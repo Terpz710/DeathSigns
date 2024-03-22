@@ -31,13 +31,15 @@ class Loader extends PluginBase implements Listener {
             $killer = $cause->getDamager();
             if ($killer instanceof Player) {
                 $killerName = $killer->getName();
-                $deathLocation = $player->getPosition();
-                $config = $this->getConfig();
-                $allWorlds = $config->get("all_worlds", true);
-                $allowedWorlds = $config->get("worlds", []);
-                if ($allWorlds || in_array($deathLocation->getWorld()->getFolderName(), $allowedWorlds)) {
-                    $this->createDeathSign($deathLocation, $victimName, $killerName);
-                }
+            } else {
+                $killerName = $victimName;
+            }
+            $deathLocation = $player->getPosition();
+            $config = $this->getConfig();
+            $allWorlds = $config->get("all_worlds", true);
+            $allowedWorlds = $config->get("worlds", []);
+            if ($allWorlds || in_array($deathLocation->getWorld()->getFolderName(), $allowedWorlds)) {
+                $this->createDeathSign($deathLocation, $victimName, $killerName);
             }
         }
     }
