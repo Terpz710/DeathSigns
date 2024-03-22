@@ -2,7 +2,6 @@
 
 # Available tag:
 # {player} = Player Name
-# {killer} = The name of the player who killed the victim
 # {date} = Date (M/D/Y)
 # Do not add anymore lines!
 # Signs has a default of 4 lines.
