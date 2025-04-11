@@ -1,7 +1,3 @@
-<p align="center">
-    <a href="https://github.com/Terpz710/DeathSigns"><img src="https://github.com/Terpz710/DeathSigns/blob/main/icon.png"></img></a><br>
-    <b>DeathSigns for Pocketmine-MP</b>
-
 # Description
 
 A [Pocketmine-MP](https://pmmp.io) plugin that creates a sign with customizable text at the players death location.
@@ -11,3 +7,4 @@ A plugin inspired by [Death Signs](https://dev.bukkit.org/projects/death-signs#:
 # Features 
 
 * Customizable messages
+* MultiWorld (can be disabled via `config.yml`)
