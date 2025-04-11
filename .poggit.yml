@@ -1,7 +1,7 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Terpz710/DeathSigns
 build-by-default: true
 branches:
-- main
+- stable
 projects:
   DeathSigns:
     path: ""
