@@ -5,4 +5,9 @@ branches:
 projects:
   DeathSigns:
     path: ""
+    libs:
+       - src: DaPigGuy/libPiggyUpdateChecker/libPiggyUpdateChecker
+         version: ^1.0.0
+    lint: false
+    icon: icon.png
 ...
